@@ -1,0 +1,6 @@
+{
+  "name": "AI Governance Analysis & Assessment Platform",
+  "description": "ระบบวิเคราะห์และประเมินธรรมาภิบาลปัญญาประดิษฐ์ตามกรอบ ETDA, AIGC, ISO 42001 และ ร่าง พ.ร.บ. ปัญญาประดิษฐ์",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
