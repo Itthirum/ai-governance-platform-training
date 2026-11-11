@@ -1,0 +1,21 @@
+{
+  "name": "AI Governance Platform",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "hostRequirements": { "cpus": 2 },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": { "label": "AI Governance Platform", "onAutoForward": "openPreview" }
+  },
+  "postCreateCommand": "npm install && cp -n .env.example .env",
+  "secrets": {
+    "GEMINI_API_KEY": {
+      "description": "Gemini API Key จาก Google AI Studio (https://aistudio.google.com/apikey)"
+    }
+  },
+  "customizations": {
+    "codespaces": { "openFiles": ["README.md", "server.ts"] },
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode", "bradlc.vscode-tailwindcss"]
+    }
+  }
+}
